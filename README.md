@@ -3,8 +3,9 @@
 Node.js + Express + MongoDB/Mongoose. CSV/XLSX imports run in a **Worker Thread** so parsing and bulk database writes do not block the main event loop.
 
 ## Requirements
-- Node.js 18+
+- Node.js 14+
 - MongoDB running locally or a MongoDB connection string
+- MongoDB shell version v4.4.7
 
 ## Setup
 ```bash
