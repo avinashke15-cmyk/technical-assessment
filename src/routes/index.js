@@ -1,0 +1,15 @@
+const router = require("express").Router();
+const controller = require("../controllers/policy.controller");
+const messageController = require("../controllers/message.controller");
+router.post("/messages", messageController.createSchedule);
+router.get("/messages", messageController.listMessages);
+router.get("/messages/scheduled", messageController.listSchedules);
+router.get("/policies/search", controller.searchByUsername);
+router.get("/policies/aggregate-by-user", controller.aggregateByUser);
+router.get("/policies", controller.listPolicies);
+router.get("/agents", controller.listAgents);
+router.get("/users", controller.listUsers);
+router.get("/accounts", controller.listAccounts);
+router.get("/lobs", controller.listLobs);
+router.get("/carriers", controller.listCarriers);
+module.exports = router;
